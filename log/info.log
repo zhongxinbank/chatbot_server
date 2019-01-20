@@ -1,0 +1,10 @@
+[2019-01-20 18:18:48,844] [LAPTOP-7VQ7UJAS] [Kivis Server] [INFO] [26380] [main] - 服务器初始化成功
+[2019-01-20 18:20:03,334] [LAPTOP-7VQ7UJAS] [Kivis Server] [INFO] [7692] [main] - 服务器初始化成功
+[2019-01-20 18:22:10,859] [LAPTOP-7VQ7UJAS] [Kivis Server] [INFO] [23976] [main] - 服务器初始化成功
+[2019-01-20 18:25:14,004] [LAPTOP-7VQ7UJAS] [Kivis Server] [INFO] [30216] [main] - 服务器初始化成功
+[2019-01-20 18:26:06,576] [LAPTOP-7VQ7UJAS] [Kivis Server] [INFO] [14968] [main] - 服务器初始化成功
+[2019-01-20 18:28:13,364] [LAPTOP-7VQ7UJAS] [Kivis Server] [INFO] [30908] [main] - 服务器初始化成功
+[2019-01-20 18:28:18,966] [LAPTOP-7VQ7UJAS] [Kivis Server] [INFO] [29184] [audit_middleware] - GET http://localhost:5000/probe?user_id=1
+[2019-01-20 18:28:23,110] [LAPTOP-7VQ7UJAS] [Kivis Server] [INFO] [24284] [audit_middleware] - POST http://localhost:5000/probe
+[2019-01-20 18:28:28,679] [LAPTOP-7VQ7UJAS] [Kivis Server] [INFO] [27872] [audit_middleware] - POST http://localhost:5000/probe
+[2019-01-20 18:28:30,026] [LAPTOP-7VQ7UJAS] [Kivis Server] [INFO] [1212] [audit_middleware] - POST http://localhost:5000/probe

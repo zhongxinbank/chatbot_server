@@ -1,0 +1,5 @@
+[2019-01-20 18:19:51,351] [LAPTOP-7VQ7UJAS] [Kivis Server] [ERROR] [15956] [probe_responder] - Traceback (most recent call last):
+  File "C:\Users\admin\Desktop\ruisi_chatbot_server\responders\probe_responder.py", line 13, in on_get
+    user_id = req.param.get("user_id")
+AttributeError: 'Request' object has no attribute 'param'
+

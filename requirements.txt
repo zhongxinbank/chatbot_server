@@ -1,0 +1,4 @@
+gunicorn
+falcon
+falcon-cors
+redis

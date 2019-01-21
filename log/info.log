@@ -83,3 +83,15 @@
 [2019-01-21 12:51:58,292] [pris3-System-Product-Name] [Kivis Server] [INFO] [139640213268224] [main] - 服务器初始化成功
 [2019-01-21 12:52:29,334] [pris3-System-Product-Name] [Kivis Server] [INFO] [139640213268224] [audit_middleware] - GET http://10.112.145.151:5000/probe?user_id=111333
 [2019-01-21 12:53:55,282] [pris3-System-Product-Name] [Kivis Server] [INFO] [139640213268224] [audit_middleware] - GET http://10.112.145.151:5000/probe?user_id=111333
+[2019-01-21 13:08:49,072] [pris3-System-Product-Name] [Kivis Server] [INFO] [139640213268224] [audit_middleware] - POST http://10.112.145.151:5000/probe
+[2019-01-21 13:08:55,056] [pris3-System-Product-Name] [Kivis Server] [INFO] [139640213268224] [audit_middleware] - GET http://10.112.145.151:5000/probe?user_id=111333
+[2019-01-21 13:09:10,486] [pris3-System-Product-Name] [Kivis Server] [INFO] [139640213268224] [audit_middleware] - POST http://10.112.145.151:5000/probe
+[2019-01-21 14:23:19,638] [pris3-System-Product-Name] [Kivis Server] [INFO] [139640213268224] [audit_middleware] - GET http://10.112.145.151:5000/probe?user_id=123456
+[2019-01-21 14:50:40,549] [pris3-System-Product-Name] [Kivis Server] [INFO] [139640213268224] [audit_middleware] - GET http://10.112.145.151:5000/probe
+[2019-01-21 15:20:40,823] [pris3-System-Product-Name] [Kivis Server] [INFO] [139640213268224] [audit_middleware] - GET http://10.112.145.151:5000/probe?user_id=123456
+[2019-01-21 15:20:57,080] [pris3-System-Product-Name] [Kivis Server] [INFO] [139640213268224] [audit_middleware] - POST http://10.112.145.151:5000/probe
+[2019-01-21 15:21:40,863] [pris3-System-Product-Name] [Kivis Server] [INFO] [139640213268224] [audit_middleware] - POST http://10.112.145.151:5000/probe
+[2019-01-21 15:29:19,496] [pris3-System-Product-Name] [Kivis Server] [INFO] [139640213268224] [audit_middleware] - POST http://10.112.145.151:5000/probe
+[2019-01-21 15:31:33,554] [pris3-System-Product-Name] [Kivis Server] [INFO] [139640213268224] [audit_middleware] - POST http://10.112.145.151:5000/probe
+[2019-01-21 15:38:22,296] [pris3-System-Product-Name] [Kivis Server] [INFO] [139640213268224] [audit_middleware] - POST http://10.112.145.151:5000/probe
+[2019-01-21 15:38:32,866] [pris3-System-Product-Name] [Kivis Server] [INFO] [139640213268224] [audit_middleware] - POST http://10.112.145.151:5000/probe

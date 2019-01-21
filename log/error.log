@@ -125,3 +125,36 @@ Traceback (most recent call last):
     raise ConnectionError(self._error_message(e))
 redis.exceptions.ConnectionError: Error 111 connecting to localhost:6379. Connection refused.
 
+[2019-01-21 15:29:19,498] [pris3-System-Product-Name] [Kivis Server] [ERROR] [139640213268224] [probe_responder] - Traceback (most recent call last):
+  File "/home1/yym2019/workspace/projects/ruisi/chatbot_server/responders/probe_responder.py", line 53, in on_post
+    req_body = json.loads(req.stream.read())
+  File "/home1/yym2019/anaconda3/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/home1/yym2019/anaconda3/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home1/yym2019/anaconda3/lib/python3.6/json/decoder.py", line 355, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 2 (char 3)
+
+[2019-01-21 15:31:33,555] [pris3-System-Product-Name] [Kivis Server] [ERROR] [139640213268224] [probe_responder] - Traceback (most recent call last):
+  File "/home1/yym2019/workspace/projects/ruisi/chatbot_server/responders/probe_responder.py", line 53, in on_post
+    req_body = json.loads(req.stream.read())
+  File "/home1/yym2019/anaconda3/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/home1/yym2019/anaconda3/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home1/yym2019/anaconda3/lib/python3.6/json/decoder.py", line 355, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 2 column 14 (char 15)
+
+[2019-01-21 15:38:22,297] [pris3-System-Product-Name] [Kivis Server] [ERROR] [139640213268224] [probe_responder] - Traceback (most recent call last):
+  File "/home1/yym2019/workspace/projects/ruisi/chatbot_server/responders/probe_responder.py", line 53, in on_post
+    req_body = json.loads(req.stream.read())
+  File "/home1/yym2019/anaconda3/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/home1/yym2019/anaconda3/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home1/yym2019/anaconda3/lib/python3.6/json/decoder.py", line 355, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 2 column 14 (char 15)
+

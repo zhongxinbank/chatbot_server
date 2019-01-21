@@ -25,8 +25,8 @@ class DM:
         # agent已经知道的slot
         self.agent_inform_slots = {}
         # 咨询记录模版
-        self.record_template = ["child_name", "child_age", "client_name", "client_gender", "phone_number",
-                                "client_location", "reserve_location", "reserve_time"]
+        self.record_template = {"child_name":" ", "child_age":" ", "english_level":" ", "client_name":" ", "client_gender":" ", "phone_number":" ",
+                                "client_location":" ", "reserve_location":" ", "reserve_time":" ", "dialog_content":" "}
         # history存放所有之前的对话，包括客服和用户
         self.history = []
         self.nlu = NLU()
@@ -45,7 +45,7 @@ class DM:
 
     def agent_response(self, raw_usr_sentence):
         """针对于用户的每句话，agent作出的回复，返回diaact"""
-        self.dialog_content += 'user:' + raw_usr_sentence + '\n'
+        self.dialog_content += 'user:' + raw_usr_sentence + '\t'
         usr_diaact = self.nlu.get_diaact(raw_usr_sentence, history=self.history)
         # print("usr_diaact:", usr_diaact)
         # 更新history
@@ -199,7 +199,7 @@ class DM:
 
     def agent_nl(self, agent_diaact, index=0):
         try:
-            self.dialog_content += "agent:" + self.nlg.get_sentence(agent_diaact)[str(index)] + '\n'
+            self.dialog_content += "agent:" + self.nlg.get_sentence(agent_diaact)[str(index)] + '\t'
             return self.nlg.get_sentence(agent_diaact)[str(index)]
         except TypeError:
             return None
@@ -207,3 +207,16 @@ class DM:
     def update_history(self, dic):
         """将之前的所有对话存下来"""
         self.history.append(dic)
+
+    def get_current_info(self):
+        record_row = {}
+        for i in self.record_template.keys():
+            if i in self.agent_inform_slots:
+                record_row[i] = self.agent_inform_slots[i]
+            else:
+                record_row[i] = ""
+        record_row["dialog_content"] = str(self.dialog_content)
+        result = ""
+        for i in record_row.keys():
+            result += i + ": " + str(record_row[i]) + "\n"
+        return result

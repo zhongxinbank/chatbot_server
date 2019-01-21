@@ -64,7 +64,8 @@ class ProbeResponder(object):
                     SessionDAO.kill_user_session(session_id)
                 else:
                     SessionDAO.set_user_session(session_id, session, 600)
-                # TODO: RECORD QA CONTEXT TO DISK
+                with open(ConstantCenter.app_env['app']['SAVE_PATH'] + session_id, 'w') as f_out:
+                    f_out.write(session.get_current_info())
                 res.status = falcon.HTTP_200
                 res.body = json.dumps({ 
                     'output': output_message,

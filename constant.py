@@ -6,11 +6,16 @@ import json
 import os
 from datetime import datetime
 import logging.config
+import configparser
 
 
 class ConstantCenter():
 
     logger_config = json.load(open('./config/logger.json'), encoding='utf-8')
+    app_env = configparser.ConfigParser()
+    app_env.read('./config/app.env')
+    if not os.path.exists(app_env['app']['SAVE_PATH']):
+        os.makedirs(app_env['app']['SAVE_PATH'])
     if not os.path.exists('./log'):
         os.makedirs('./log')
     logging.config.dictConfig(logger_config['logging_settings'])

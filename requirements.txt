@@ -3,3 +3,4 @@ falcon
 falcon-cors
 redis
 jieba
+configparser

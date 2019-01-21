@@ -3,3 +3,125 @@
     user_id = req.param.get("user_id")
 AttributeError: 'Request' object has no attribute 'param'
 
+[2019-01-21 09:59:06,217] [pris3-System-Product-Name] [Kivis Server] [ERROR] [140563633592064] [session_dao] - set_user_session 发生错误： Traceback (most recent call last):
+  File "/home1/yym2019/anaconda3/lib/python3.6/site-packages/redis/connection.py", line 493, in connect
+    sock = self._connect()
+  File "/home1/yym2019/anaconda3/lib/python3.6/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/home1/yym2019/anaconda3/lib/python3.6/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home1/yym2019/anaconda3/lib/python3.6/site-packages/redis/client.py", line 754, in execute_command
+    connection.send_command(*args)
+  File "/home1/yym2019/anaconda3/lib/python3.6/site-packages/redis/connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/home1/yym2019/anaconda3/lib/python3.6/site-packages/redis/connection.py", line 594, in send_packed_command
+    self.connect()
+  File "/home1/yym2019/anaconda3/lib/python3.6/site-packages/redis/connection.py", line 498, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home1/yym2019/anaconda3/lib/python3.6/site-packages/redis/connection.py", line 493, in connect
+    sock = self._connect()
+  File "/home1/yym2019/anaconda3/lib/python3.6/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/home1/yym2019/anaconda3/lib/python3.6/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home1/yym2019/workspace/projects/chatbot_server/database/dao/session_dao.py", line 12, in set_user_session
+    redis_db.set(id, pickle.dumps(session), ex=session_duration)
+  File "/home1/yym2019/anaconda3/lib/python3.6/site-packages/redis/client.py", line 1394, in set
+    return self.execute_command('SET', *pieces)
+  File "/home1/yym2019/anaconda3/lib/python3.6/site-packages/redis/client.py", line 760, in execute_command
+    connection.send_command(*args)
+  File "/home1/yym2019/anaconda3/lib/python3.6/site-packages/redis/connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/home1/yym2019/anaconda3/lib/python3.6/site-packages/redis/connection.py", line 594, in send_packed_command
+    self.connect()
+  File "/home1/yym2019/anaconda3/lib/python3.6/site-packages/redis/connection.py", line 498, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:6379. Connection refused.
+
+[2019-01-21 11:01:09,390] [pris3-System-Product-Name] [Kivis Server] [ERROR] [140620355061504] [probe_responder] - Traceback (most recent call last):
+  File "/home1/yym2019/workspace/projects/ruisi/chatbot_server/responders/probe_responder.py", line 53, in on_post
+    req_body = json.loads(req.stream.read())
+  File "/home1/yym2019/anaconda3/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/home1/yym2019/anaconda3/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home1/yym2019/anaconda3/lib/python3.6/json/decoder.py", line 355, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 2 (char 3)
+
+[2019-01-21 11:27:31,946] [pris3-System-Product-Name] [Kivis Server] [ERROR] [140620355061504] [probe_responder] - Traceback (most recent call last):
+  File "/home1/yym2019/workspace/projects/ruisi/chatbot_server/responders/probe_responder.py", line 53, in on_post
+    req_body = json.loads(req.stream.read())
+  File "/home1/yym2019/anaconda3/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/home1/yym2019/anaconda3/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home1/yym2019/anaconda3/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+[2019-01-21 12:52:29,730] [pris3-System-Product-Name] [Kivis Server] [ERROR] [139640213268224] [session_dao] - set_user_session 发生错误： Traceback (most recent call last):
+  File "/home1/yym2019/anaconda3/lib/python3.6/site-packages/redis/connection.py", line 493, in connect
+    sock = self._connect()
+  File "/home1/yym2019/anaconda3/lib/python3.6/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/home1/yym2019/anaconda3/lib/python3.6/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home1/yym2019/anaconda3/lib/python3.6/site-packages/redis/client.py", line 754, in execute_command
+    connection.send_command(*args)
+  File "/home1/yym2019/anaconda3/lib/python3.6/site-packages/redis/connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/home1/yym2019/anaconda3/lib/python3.6/site-packages/redis/connection.py", line 594, in send_packed_command
+    self.connect()
+  File "/home1/yym2019/anaconda3/lib/python3.6/site-packages/redis/connection.py", line 498, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home1/yym2019/anaconda3/lib/python3.6/site-packages/redis/connection.py", line 493, in connect
+    sock = self._connect()
+  File "/home1/yym2019/anaconda3/lib/python3.6/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/home1/yym2019/anaconda3/lib/python3.6/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home1/yym2019/workspace/projects/ruisi/chatbot_server/database/dao/session_dao.py", line 12, in set_user_session
+    redis_db.set(id, pickle.dumps(session), ex=session_duration)
+  File "/home1/yym2019/anaconda3/lib/python3.6/site-packages/redis/client.py", line 1394, in set
+    return self.execute_command('SET', *pieces)
+  File "/home1/yym2019/anaconda3/lib/python3.6/site-packages/redis/client.py", line 760, in execute_command
+    connection.send_command(*args)
+  File "/home1/yym2019/anaconda3/lib/python3.6/site-packages/redis/connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/home1/yym2019/anaconda3/lib/python3.6/site-packages/redis/connection.py", line 594, in send_packed_command
+    self.connect()
+  File "/home1/yym2019/anaconda3/lib/python3.6/site-packages/redis/connection.py", line 498, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:6379. Connection refused.
+

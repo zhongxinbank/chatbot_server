@@ -1,0 +1,3104 @@
+{
+  "request": [
+      {
+        "request_slots": ["child_age"],
+        "nl": {"agt": {"0": "恩，请问您是给几岁的孩子咨询瑞思的课程呢？"},"usr": ""},
+        "inform_slots": []
+      },
+      {
+        "request_slots": ["english_level"],
+        "nl": {"agt": {"0": "孩子的英语基础怎么样呢？有上过辅导班吗？"},"usr": ""},
+        "inform_slots": []
+      },
+      {
+        "request_slots": ["special_need"],
+        "nl": {"agt": {"0": "请问您想提高孩子的哪些能力呢"},"usr": ""},
+        "inform_slots": []
+      },
+    {
+      "request_slots": [
+        "know_about_ruisi"
+      ],
+      "nl": {
+        "agt": {
+          "0":"我们针对3-5岁的孩子，会通过主题游戏、区角教学等方式进行教学，培养孩子英语兴趣，养成正确学习的习惯。着重培养孩子的英语应用能力和创造力，英语如同母语，自然掌握。\n请问您之前了解过瑞思吗？",
+          "1":"我们针对6-12岁的孩子，增加了学科知识的学习，将生活英语延伸到学科英语(语文、数学、科学)，培养孩子运用英语思维解决实际问题和自主学习的能力。\n 请问您之前了解过瑞思吗？",
+          "2":"我们针对13-18岁的青少年，采用和美国中学同步同质的教材，着重培养孩子地道美式英语思维,解决中国学生留学后水土不服等问题。\n请问您之前了解过瑞思吗？",
+          "3": "很抱歉，瑞思英语只针对于3-18岁的孩子，我们没有适合您孩子年龄的课程。感谢您对瑞思英语的关注，祝您生活愉快，再见！",
+          "4": "好的，瑞思英语会针对于您孩子的特点，因材施教，全面发展孩子的各项能力。\n请问您之前了解过瑞思吗？"
+        }, "usr": ""
+      },
+      "inform_slots": []
+    },
+    {
+      "request_slots": [
+        "client_location"
+      ],
+      "nl": {
+        "agt": {
+          "0": "请问您是在哪个城市呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": []
+    },
+    {
+      "request_slots": [
+        "phone_number"
+      ],
+      "nl": {
+        "agt": {
+          "0":"请问您的联系方式是多少呢？", "1":"您留下您的手机号码，到时会有对应校区的老师为您介绍具体的事宜","3":"您看您的联系方式是多少呢？我们这边给您登记一下"
+        },
+        "usr": ""
+      },
+      "inform_slots": []
+    },
+    {
+      "request_slots": [
+        "client_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "请问怎么称呼您呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": []
+    },
+    {
+      "request_slots": [
+        "client_gender"
+      ],
+      "nl": {
+        "agt": {
+          "0": "请问您是孩子的爸爸还是妈妈呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": []
+    },
+    {
+      "request_slots": [
+        "child_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "请问咱们小朋友怎么称呼呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": []
+    },
+    {
+      "request_slots": [],
+      "nl": {
+        "agt": {
+          "0": "您所在的地区的有$school_location$"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "school_location"
+      ]
+    },
+    {
+      "request_slots": [],
+      "nl": {
+        "agt": {
+          "0": "我们的校区电话是$slot_val$"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "school_phone"
+      ]
+    },
+    {
+      "request_slots": [],
+      "nl": {
+        "agt": {
+          "0": "是这样的，我们最近正在进行开学季主题活动，优惠力度很大，您可以先了解一下"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "sale"
+      ]
+    },
+    {
+      "request_slots": [],
+      "nl": {
+        "agt": {
+          "0": "不好意思，我们这边暂时不支持微信和QQ等除电话之外的联系方式，非常抱歉"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "other_contact"
+      ]
+    },
+    {
+      "request_slots": [],
+      "nl": {
+        "agt": {
+          "0": "关于插班的问题不同校区规定不同，您可以留下您的联系方式，我让我们老师详细为您介绍"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "cut_in"
+      ]
+    },
+    {
+      "request_slots": [],
+      "nl": {
+        "agt": {
+          "0": "不同校区的时间安排不同，您可以留下您的联系方式，我们这边的老师会在您方便的时候联系您为您详细介绍的"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_schedule"
+      ]
+    },
+    {
+      "request_slots": [],
+      "nl": {
+        "agt": {
+          "0": ""
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "have_school_somewhere"
+      ]
+    },
+    {
+      "request_slots": [],
+      "nl": {
+        "agt": {
+          "0": "试听课是家长和孩子一起上的，我们希望您能和孩子一起感受上课的氛围，正式上课时孩子要能够独立上课的"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "attend_class_alone"
+      ]
+    },
+    {
+      "request_slots": [],
+      "nl": {
+        "agt": {
+          "0": "我们这边的试听课程都是不收取任何费用的"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "audition_free"
+      ]
+    },
+    {
+      "request_slots": [],
+      "nl": {
+        "agt": {
+          "0": "试听课程孩子是必须和家长一起参加的"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "child_attend"
+      ]
+    },
+    {
+      "request_slots": [],
+      "nl": {
+        "agt": {
+          "0": "试听课我们希望孩子和家长一起参加，一起感受上课的氛围"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "allow_parents_together"
+      ]
+    },
+    {
+      "request_slots": [],
+      "nl": {
+        "agt": {
+          "0": "一课时是一个小时的，家长如果担心孩子适应情况的话 咱们有试听课 您可以带宝贝先参加试一试，观察宝宝的适应情况噢"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_length"
+      ]
+    },
+    {
+      "request_slots": [],
+      "nl": {
+        "agt": {
+          "0": "您好，瑞思采用的是霍顿米夫林哈考特出版的教材，与美国小学是同质同步的课堂。"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "textbook"
+      ]
+    },
+    {
+      "request_slots": [],
+      "nl": {
+        "agt": {
+          "0": "有两种的班型，一种是全天班，从早上的九点到晚上的五点，另外一种班型是利用孩子放学以后的时间和周末的时间过来学习的"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "fulltime_or_sparetime"
+      ]
+    },
+    {
+      "request_slots": [],
+      "nl": {
+        "agt": {
+          "0": "我们是小班授课形式的，一个班大概是10个孩子左右的，具体的上课形式可以后期安排老师为您介绍一下"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_size"
+      ]
+    },
+    {
+      "request_slots": [],
+      "nl": {
+        "agt": {
+          "0": "我们这边一个阶段大概是一年的时间"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "length_of_per_period"
+      ]
+    },
+    {
+      "request_slots": [],
+      "nl": {
+        "agt": {
+          "0": "我们这边一个阶段中途是不允许退费的"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "allow_return_premium"
+      ]
+    },
+    {
+      "request_slots": [],
+      "nl": {
+        "agt": {
+          "0": "我们的老师中外教都有，主要以中教为主，在全英文的环境下进行学习"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "teacher_nation"
+      ]
+    },
+    {
+      "request_slots": [],
+      "nl": {
+        "agt": {
+          "0": "不同的阶段和班型对应的课时是不一样的，您留下联系方式，我安排校区的专业课程老师结合小朋友的情况为您详细的介绍一下，您看可以吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_type"
+      ]
+    },
+    {
+      "request_slots": [],
+      "nl": {
+        "agt": {
+          "0": "针对13-18岁咱们是线上的课程"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "online_course"
+      ]
+    },
+    {
+      "request_slots": [],
+      "nl": {
+        "agt": {
+          "0": "不同的阶段和班型对应的课时是不一样的，我安排校区的专业课程老师结合小朋友的情况为您详细的介绍一下，您看可以吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "fee"
+      ]
+    },
+    {
+      "request_slots": [],
+      "nl": {
+        "agt": {
+          "0": "好的，那我先给您介绍一下瑞思英语：瑞思学科英语使用美国霍顿·米夫林·哈考特教育集团历时多年斥巨资打造的课程及教材，充分遵循孩子的认知规律，由浅入深。全面提升孩子英语语言、学科知识、英语思维、应用能力。"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "ruisi_introduction"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_age"
+      ],
+      "nl": {
+        "agt": {
+          "0": "您所在的地区的有$school_location$ 恩，请问您是给几岁的孩子咨询瑞思的课程呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "school_location"
+      ]
+    },
+    {
+      "request_slots": [
+        "english_level"
+      ],
+      "nl": {
+        "agt": {
+          "0": "您所在的地区的有$school_location$ 孩子的英语基础怎么样呢？有上过辅导班吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "school_location"
+      ]
+    },
+    {
+      "request_slots": [
+        "special_need"
+      ],
+      "nl": {
+        "agt": {
+          "0": "您所在的地区的有$school_location$ 请问您想提高孩子的哪些能力呢"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "school_location"
+      ]
+    },
+    {
+      "request_slots": [
+        "know_about_ruisi"
+      ],
+      "nl": {
+        "agt": {
+          "0": "您所在的地区的有$school_location$ 请问您之前了解过瑞思吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "school_location"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_location"
+      ],
+      "nl": {
+        "agt": {
+          "0": "您所在的地区的有$school_location$ 请问您是在哪个城市呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "school_location"
+      ]
+    },
+    {
+      "request_slots": [
+        "phone_number"
+      ],
+      "nl": {
+        "agt": {
+          "0": "您所在的地区的有$school_location$ 请问您的联系方式是多少呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "school_location"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "您所在的地区的有$school_location$ 请问怎么称呼您呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "school_location"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_gender"
+      ],
+      "nl": {
+        "agt": {
+          "0": "您所在的地区的有$school_location$ 请问您是孩子的爸爸还是妈妈呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "school_location"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "您所在的地区的有$school_location$ 请问咱们小朋友怎么称呼呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "school_location"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_age"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们的校区电话是$slot_val$ 恩，请问您是给几岁的孩子咨询瑞思的课程呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "school_phone"
+      ]
+    },
+    {
+      "request_slots": [
+        "english_level"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们的校区电话是$slot_val$ 孩子的英语基础怎么样呢？有上过辅导班吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "school_phone"
+      ]
+    },
+    {
+      "request_slots": [
+        "special_need"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们的校区电话是$slot_val$ 请问您想提高孩子的哪些能力呢"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "school_phone"
+      ]
+    },
+    {
+      "request_slots": [
+        "know_about_ruisi"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们的校区电话是$slot_val$ 请问您之前了解过瑞思吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "school_phone"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_location"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们的校区电话是$slot_val$ 请问您是在哪个城市呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "school_phone"
+      ]
+    },
+    {
+      "request_slots": [
+        "phone_number"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们的校区电话是$slot_val$ 请问您的联系方式是多少呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "school_phone"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们的校区电话是$slot_val$ 请问怎么称呼您呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "school_phone"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_gender"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们的校区电话是$slot_val$ 请问您是孩子的爸爸还是妈妈呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "school_phone"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们的校区电话是$slot_val$ 请问咱们小朋友怎么称呼呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "school_phone"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_age"
+      ],
+      "nl": {
+        "agt": {
+          "0": "是这样的，我们最近正在进行开学季主题活动，优惠力度很大，您可以先了解一下 恩，请问您是给几岁的孩子咨询瑞思的课程呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "sale"
+      ]
+    },
+    {
+      "request_slots": [
+        "english_level"
+      ],
+      "nl": {
+        "agt": {
+          "0": "是这样的，我们最近正在进行开学季主题活动，优惠力度很大，您可以先了解一下 孩子的英语基础怎么样呢？有上过辅导班吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "sale"
+      ]
+    },
+    {
+      "request_slots": [
+        "special_need"
+      ],
+      "nl": {
+        "agt": {
+          "0": "是这样的，我们最近正在进行开学季主题活动，优惠力度很大，您可以先了解一下 请问您想提高孩子的哪些能力呢"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "sale"
+      ]
+    },
+    {
+      "request_slots": [
+        "know_about_ruisi"
+      ],
+      "nl": {
+        "agt": {
+          "0": "是这样的，我们最近正在进行开学季主题活动，优惠力度很大，您可以先了解一下 请问您之前了解过瑞思吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "sale"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_location"
+      ],
+      "nl": {
+        "agt": {
+          "0": "是这样的，我们最近正在进行开学季主题活动，优惠力度很大，您可以先了解一下 请问您是在哪个城市呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "sale"
+      ]
+    },
+    {
+      "request_slots": [
+        "phone_number"
+      ],
+      "nl": {
+        "agt": {
+          "0": "是这样的，我们最近正在进行开学季主题活动，优惠力度很大，您可以先了解一下 请问您的联系方式是多少呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "sale"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "是这样的，我们最近正在进行开学季主题活动，优惠力度很大，您可以先了解一下 请问怎么称呼您呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "sale"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_gender"
+      ],
+      "nl": {
+        "agt": {
+          "0": "是这样的，我们最近正在进行开学季主题活动，优惠力度很大，您可以先了解一下 请问您是孩子的爸爸还是妈妈呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "sale"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "是这样的，我们最近正在进行开学季主题活动，优惠力度很大，您可以先了解一下 请问咱们小朋友怎么称呼呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "sale"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_age"
+      ],
+      "nl": {
+        "agt": {
+          "0": "不好意思，我们这边暂时不支持微信和QQ等除电话之外的联系方式，非常抱歉 恩，请问您是给几岁的孩子咨询瑞思的课程呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "other_contact"
+      ]
+    },
+    {
+      "request_slots": [
+        "english_level"
+      ],
+      "nl": {
+        "agt": {
+          "0": "不好意思，我们这边暂时不支持微信和QQ等除电话之外的联系方式，非常抱歉 孩子的英语基础怎么样呢？有上过辅导班吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "other_contact"
+      ]
+    },
+    {
+      "request_slots": [
+        "special_need"
+      ],
+      "nl": {
+        "agt": {
+          "0": "不好意思，我们这边暂时不支持微信和QQ等除电话之外的联系方式，非常抱歉 请问您想提高孩子的哪些能力呢"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "other_contact"
+      ]
+    },
+    {
+      "request_slots": [
+        "know_about_ruisi"
+      ],
+      "nl": {
+        "agt": {
+          "0": "不好意思，我们这边暂时不支持微信和QQ等除电话之外的联系方式，非常抱歉 请问您之前了解过瑞思吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "other_contact"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_location"
+      ],
+      "nl": {
+        "agt": {
+          "0": "不好意思，我们这边暂时不支持微信和QQ等除电话之外的联系方式，非常抱歉 请问您是在哪个城市呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "other_contact"
+      ]
+    },
+    {
+      "request_slots": [
+        "phone_number"
+      ],
+      "nl": {
+        "agt": {
+          "0": "不好意思，我们这边暂时不支持微信和QQ等除电话之外的联系方式，非常抱歉 请问您的联系方式是多少呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "other_contact"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "不好意思，我们这边暂时不支持微信和QQ等除电话之外的联系方式，非常抱歉 请问怎么称呼您呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "other_contact"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_gender"
+      ],
+      "nl": {
+        "agt": {
+          "0": "不好意思，我们这边暂时不支持微信和QQ等除电话之外的联系方式，非常抱歉 请问您是孩子的爸爸还是妈妈呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "other_contact"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "不好意思，我们这边暂时不支持微信和QQ等除电话之外的联系方式，非常抱歉 请问咱们小朋友怎么称呼呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "other_contact"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_age"
+      ],
+      "nl": {
+        "agt": {
+          "0": "关于插班的问题不同校区规定不同，您可以留下您的联系方式，我让我们老师详细为您介绍 恩，请问您是给几岁的孩子咨询瑞思的课程呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "cut_in"
+      ]
+    },
+    {
+      "request_slots": [
+        "english_level"
+      ],
+      "nl": {
+        "agt": {
+          "0": "关于插班的问题不同校区规定不同，您可以留下您的联系方式，我让我们老师详细为您介绍 孩子的英语基础怎么样呢？有上过辅导班吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "cut_in"
+      ]
+    },
+    {
+      "request_slots": [
+        "special_need"
+      ],
+      "nl": {
+        "agt": {
+          "0": "关于插班的问题不同校区规定不同，您可以留下您的联系方式，我让我们老师详细为您介绍 请问您想提高孩子的哪些能力呢"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "cut_in"
+      ]
+    },
+    {
+      "request_slots": [
+        "know_about_ruisi"
+      ],
+      "nl": {
+        "agt": {
+          "0": "关于插班的问题不同校区规定不同，您可以留下您的联系方式，我让我们老师详细为您介绍 请问您之前了解过瑞思吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "cut_in"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_location"
+      ],
+      "nl": {
+        "agt": {
+          "0": "关于插班的问题不同校区规定不同，您可以留下您的联系方式，我让我们老师详细为您介绍 请问您是在哪个城市呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "cut_in"
+      ]
+    },
+    {
+      "request_slots": [
+        "phone_number"
+      ],
+      "nl": {
+        "agt": {
+          "0": "关于插班的问题不同校区规定不同，您可以留下您的联系方式，我让我们老师详细为您介绍 请问您的联系方式是多少呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "cut_in"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "关于插班的问题不同校区规定不同，您可以留下您的联系方式，我让我们老师详细为您介绍 请问怎么称呼您呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "cut_in"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_gender"
+      ],
+      "nl": {
+        "agt": {
+          "0": "关于插班的问题不同校区规定不同，您可以留下您的联系方式，我让我们老师详细为您介绍 请问您是孩子的爸爸还是妈妈呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "cut_in"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "关于插班的问题不同校区规定不同，您可以留下您的联系方式，我让我们老师详细为您介绍 请问咱们小朋友怎么称呼呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "cut_in"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_age"
+      ],
+      "nl": {
+        "agt": {
+          "0": "不同校区的时间安排不同，您可以留下您的联系方式，我们这边的老师会在您方便的时候联系您为您详细介绍的 恩，请问您是给几岁的孩子咨询瑞思的课程呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_schedule"
+      ]
+    },
+    {
+      "request_slots": [
+        "english_level"
+      ],
+      "nl": {
+        "agt": {
+          "0": "不同校区的时间安排不同，您可以留下您的联系方式，我们这边的老师会在您方便的时候联系您为您详细介绍的 孩子的英语基础怎么样呢？有上过辅导班吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_schedule"
+      ]
+    },
+    {
+      "request_slots": [
+        "special_need"
+      ],
+      "nl": {
+        "agt": {
+          "0": "不同校区的时间安排不同，您可以留下您的联系方式，我们这边的老师会在您方便的时候联系您为您详细介绍的 请问您想提高孩子的哪些能力呢"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_schedule"
+      ]
+    },
+    {
+      "request_slots": [
+        "know_about_ruisi"
+      ],
+      "nl": {
+        "agt": {
+          "0": "不同校区的时间安排不同，您可以留下您的联系方式，我们这边的老师会在您方便的时候联系您为您详细介绍的 请问您之前了解过瑞思吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_schedule"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_location"
+      ],
+      "nl": {
+        "agt": {
+          "0": "不同校区的时间安排不同，您可以留下您的联系方式，我们这边的老师会在您方便的时候联系您为您详细介绍的 请问您是在哪个城市呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_schedule"
+      ]
+    },
+    {
+      "request_slots": [
+        "phone_number"
+      ],
+      "nl": {
+        "agt": {
+          "0": "不同校区的时间安排不同，您可以留下您的联系方式，我们这边的老师会在您方便的时候联系您为您详细介绍的 请问您的联系方式是多少呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_schedule"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "不同校区的时间安排不同，您可以留下您的联系方式，我们这边的老师会在您方便的时候联系您为您详细介绍的 请问怎么称呼您呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_schedule"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_gender"
+      ],
+      "nl": {
+        "agt": {
+          "0": "不同校区的时间安排不同，您可以留下您的联系方式，我们这边的老师会在您方便的时候联系您为您详细介绍的 请问您是孩子的爸爸还是妈妈呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_schedule"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "不同校区的时间安排不同，您可以留下您的联系方式，我们这边的老师会在您方便的时候联系您为您详细介绍的 请问咱们小朋友怎么称呼呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_schedule"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_age"
+      ],
+      "nl": {
+        "agt": {
+          "0": "试听课是家长和孩子一起上的，我们希望您能和孩子一起感受上课的氛围，正式上课时孩子要能够独立上课的 恩，请问您是给几岁的孩子咨询瑞思的课程呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "attend_class_alone"
+      ]
+    },
+    {
+      "request_slots": [
+        "english_level"
+      ],
+      "nl": {
+        "agt": {
+          "0": "试听课是家长和孩子一起上的，我们希望您能和孩子一起感受上课的氛围，正式上课时孩子要能够独立上课的 孩子的英语基础怎么样呢？有上过辅导班吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "attend_class_alone"
+      ]
+    },
+    {
+      "request_slots": [
+        "special_need"
+      ],
+      "nl": {
+        "agt": {
+          "0": "试听课是家长和孩子一起上的，我们希望您能和孩子一起感受上课的氛围，正式上课时孩子要能够独立上课的 请问您想提高孩子的哪些能力呢"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "attend_class_alone"
+      ]
+    },
+    {
+      "request_slots": [
+        "know_about_ruisi"
+      ],
+      "nl": {
+        "agt": {
+          "0": "试听课是家长和孩子一起上的，我们希望您能和孩子一起感受上课的氛围，正式上课时孩子要能够独立上课的 请问您之前了解过瑞思吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "attend_class_alone"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_location"
+      ],
+      "nl": {
+        "agt": {
+          "0": "试听课是家长和孩子一起上的，我们希望您能和孩子一起感受上课的氛围，正式上课时孩子要能够独立上课的 请问您是在哪个城市呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "attend_class_alone"
+      ]
+    },
+    {
+      "request_slots": [
+        "phone_number"
+      ],
+      "nl": {
+        "agt": {
+          "0": "试听课是家长和孩子一起上的，我们希望您能和孩子一起感受上课的氛围，正式上课时孩子要能够独立上课的 请问您的联系方式是多少呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "attend_class_alone"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "试听课是家长和孩子一起上的，我们希望您能和孩子一起感受上课的氛围，正式上课时孩子要能够独立上课的 请问怎么称呼您呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "attend_class_alone"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_gender"
+      ],
+      "nl": {
+        "agt": {
+          "0": "试听课是家长和孩子一起上的，我们希望您能和孩子一起感受上课的氛围，正式上课时孩子要能够独立上课的 请问您是孩子的爸爸还是妈妈呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "attend_class_alone"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "试听课是家长和孩子一起上的，我们希望您能和孩子一起感受上课的氛围，正式上课时孩子要能够独立上课的 请问咱们小朋友怎么称呼呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "attend_class_alone"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_age"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们这边的试听课程都是不收取任何费用的 恩，请问您是给几岁的孩子咨询瑞思的课程呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "audition_free"
+      ]
+    },
+    {
+      "request_slots": [
+        "english_level"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们这边的试听课程都是不收取任何费用的 孩子的英语基础怎么样呢？有上过辅导班吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "audition_free"
+      ]
+    },
+    {
+      "request_slots": [
+        "special_need"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们这边的试听课程都是不收取任何费用的 请问您想提高孩子的哪些能力呢"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "audition_free"
+      ]
+    },
+    {
+      "request_slots": [
+        "know_about_ruisi"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们这边的试听课程都是不收取任何费用的 请问您之前了解过瑞思吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "audition_free"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_location"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们这边的试听课程都是不收取任何费用的 请问您是在哪个城市呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "audition_free"
+      ]
+    },
+    {
+      "request_slots": [
+        "phone_number"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们这边的试听课程都是不收取任何费用的 请问您的联系方式是多少呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "audition_free"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们这边的试听课程都是不收取任何费用的 请问怎么称呼您呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "audition_free"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_gender"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们这边的试听课程都是不收取任何费用的 请问您是孩子的爸爸还是妈妈呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "audition_free"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们这边的试听课程都是不收取任何费用的 请问咱们小朋友怎么称呼呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "audition_free"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_age"
+      ],
+      "nl": {
+        "agt": {
+          "0": "试听课程孩子是必须和家长一起参加的 恩，请问您是给几岁的孩子咨询瑞思的课程呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "child_attend"
+      ]
+    },
+    {
+      "request_slots": [
+        "english_level"
+      ],
+      "nl": {
+        "agt": {
+          "0": "试听课程孩子是必须和家长一起参加的 孩子的英语基础怎么样呢？有上过辅导班吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "child_attend"
+      ]
+    },
+    {
+      "request_slots": [
+        "special_need"
+      ],
+      "nl": {
+        "agt": {
+          "0": "试听课程孩子是必须和家长一起参加的 请问您想提高孩子的哪些能力呢"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "child_attend"
+      ]
+    },
+    {
+      "request_slots": [
+        "know_about_ruisi"
+      ],
+      "nl": {
+        "agt": {
+          "0": "试听课程孩子是必须和家长一起参加的 请问您之前了解过瑞思吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "child_attend"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_location"
+      ],
+      "nl": {
+        "agt": {
+          "0": "试听课程孩子是必须和家长一起参加的 请问您是在哪个城市呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "child_attend"
+      ]
+    },
+    {
+      "request_slots": [
+        "phone_number"
+      ],
+      "nl": {
+        "agt": {
+          "0": "试听课程孩子是必须和家长一起参加的 请问您的联系方式是多少呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "child_attend"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "试听课程孩子是必须和家长一起参加的 请问怎么称呼您呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "child_attend"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_gender"
+      ],
+      "nl": {
+        "agt": {
+          "0": "试听课程孩子是必须和家长一起参加的 请问您是孩子的爸爸还是妈妈呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "child_attend"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "试听课程孩子是必须和家长一起参加的 请问咱们小朋友怎么称呼呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "child_attend"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_age"
+      ],
+      "nl": {
+        "agt": {
+          "0": "试听课我们希望孩子和家长一起参加，一起感受上课的氛围 恩，请问您是给几岁的孩子咨询瑞思的课程呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "allow_parents_together"
+      ]
+    },
+    {
+      "request_slots": [
+        "english_level"
+      ],
+      "nl": {
+        "agt": {
+          "0": "试听课我们希望孩子和家长一起参加，一起感受上课的氛围 孩子的英语基础怎么样呢？有上过辅导班吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "allow_parents_together"
+      ]
+    },
+    {
+      "request_slots": [
+        "special_need"
+      ],
+      "nl": {
+        "agt": {
+          "0": "试听课我们希望孩子和家长一起参加，一起感受上课的氛围 请问您想提高孩子的哪些能力呢"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "allow_parents_together"
+      ]
+    },
+    {
+      "request_slots": [
+        "know_about_ruisi"
+      ],
+      "nl": {
+        "agt": {
+          "0": "试听课我们希望孩子和家长一起参加，一起感受上课的氛围 请问您之前了解过瑞思吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "allow_parents_together"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_location"
+      ],
+      "nl": {
+        "agt": {
+          "0": "试听课我们希望孩子和家长一起参加，一起感受上课的氛围 请问您是在哪个城市呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "allow_parents_together"
+      ]
+    },
+    {
+      "request_slots": [
+        "phone_number"
+      ],
+      "nl": {
+        "agt": {
+          "0": "试听课我们希望孩子和家长一起参加，一起感受上课的氛围 请问您的联系方式是多少呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "allow_parents_together"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "试听课我们希望孩子和家长一起参加，一起感受上课的氛围 请问怎么称呼您呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "allow_parents_together"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_gender"
+      ],
+      "nl": {
+        "agt": {
+          "0": "试听课我们希望孩子和家长一起参加，一起感受上课的氛围 请问您是孩子的爸爸还是妈妈呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "allow_parents_together"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "试听课我们希望孩子和家长一起参加，一起感受上课的氛围 请问咱们小朋友怎么称呼呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "allow_parents_together"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_age"
+      ],
+      "nl": {
+        "agt": {
+          "0": "一课时是一个小时的，家长如果担心孩子适应情况的话 咱们有试听课 您可以带宝贝先参加试一试，观察宝宝的适应情况噢 恩，请问您是给几岁的孩子咨询瑞思的课程呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_length"
+      ]
+    },
+    {
+      "request_slots": [
+        "english_level"
+      ],
+      "nl": {
+        "agt": {
+          "0": "一课时是一个小时的，家长如果担心孩子适应情况的话 咱们有试听课 您可以带宝贝先参加试一试，观察宝宝的适应情况噢 孩子的英语基础怎么样呢？有上过辅导班吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_length"
+      ]
+    },
+    {
+      "request_slots": [
+        "special_need"
+      ],
+      "nl": {
+        "agt": {
+          "0": "一课时是一个小时的，家长如果担心孩子适应情况的话 咱们有试听课 您可以带宝贝先参加试一试，观察宝宝的适应情况噢 请问您想提高孩子的哪些能力呢"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_length"
+      ]
+    },
+    {
+      "request_slots": [
+        "know_about_ruisi"
+      ],
+      "nl": {
+        "agt": {
+          "0": "一课时是一个小时的，家长如果担心孩子适应情况的话 咱们有试听课 您可以带宝贝先参加试一试，观察宝宝的适应情况噢 请问您之前了解过瑞思吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_length"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_location"
+      ],
+      "nl": {
+        "agt": {
+          "0": "一课时是一个小时的，家长如果担心孩子适应情况的话 咱们有试听课 您可以带宝贝先参加试一试，观察宝宝的适应情况噢 请问您是在哪个城市呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_length"
+      ]
+    },
+    {
+      "request_slots": [
+        "phone_number"
+      ],
+      "nl": {
+        "agt": {
+          "0": "一课时是一个小时的，家长如果担心孩子适应情况的话 咱们有试听课 您可以带宝贝先参加试一试，观察宝宝的适应情况噢 请问您的联系方式是多少呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_length"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "一课时是一个小时的，家长如果担心孩子适应情况的话 咱们有试听课 您可以带宝贝先参加试一试，观察宝宝的适应情况噢 请问怎么称呼您呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_length"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_gender"
+      ],
+      "nl": {
+        "agt": {
+          "0": "一课时是一个小时的，家长如果担心孩子适应情况的话 咱们有试听课 您可以带宝贝先参加试一试，观察宝宝的适应情况噢 请问您是孩子的爸爸还是妈妈呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_length"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "一课时是一个小时的，家长如果担心孩子适应情况的话 咱们有试听课 您可以带宝贝先参加试一试，观察宝宝的适应情况噢 请问咱们小朋友怎么称呼呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_length"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_age"
+      ],
+      "nl": {
+        "agt": {
+          "0": "您好，瑞思采用的是霍顿米夫林哈考特出版的教材，与美国小学是同质同步的课堂。 恩，请问您是给几岁的孩子咨询瑞思的课程呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "textbook"
+      ]
+    },
+    {
+      "request_slots": [
+        "english_level"
+      ],
+      "nl": {
+        "agt": {
+          "0": "您好，瑞思采用的是霍顿米夫林哈考特出版的教材，与美国小学是同质同步的课堂。 孩子的英语基础怎么样呢？有上过辅导班吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "textbook"
+      ]
+    },
+    {
+      "request_slots": [
+        "special_need"
+      ],
+      "nl": {
+        "agt": {
+          "0": "您好，瑞思采用的是霍顿米夫林哈考特出版的教材，与美国小学是同质同步的课堂。 请问您想提高孩子的哪些能力呢"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "textbook"
+      ]
+    },
+    {
+      "request_slots": [
+        "know_about_ruisi"
+      ],
+      "nl": {
+        "agt": {
+          "0": "您好，瑞思采用的是霍顿米夫林哈考特出版的教材，与美国小学是同质同步的课堂。 请问您之前了解过瑞思吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "textbook"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_location"
+      ],
+      "nl": {
+        "agt": {
+          "0": "您好，瑞思采用的是霍顿米夫林哈考特出版的教材，与美国小学是同质同步的课堂。 请问您是在哪个城市呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "textbook"
+      ]
+    },
+    {
+      "request_slots": [
+        "phone_number"
+      ],
+      "nl": {
+        "agt": {
+          "0": "您好，瑞思采用的是霍顿米夫林哈考特出版的教材，与美国小学是同质同步的课堂。 请问您的联系方式是多少呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "textbook"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "您好，瑞思采用的是霍顿米夫林哈考特出版的教材，与美国小学是同质同步的课堂。 请问怎么称呼您呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "textbook"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_gender"
+      ],
+      "nl": {
+        "agt": {
+          "0": "您好，瑞思采用的是霍顿米夫林哈考特出版的教材，与美国小学是同质同步的课堂。 请问您是孩子的爸爸还是妈妈呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "textbook"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "您好，瑞思采用的是霍顿米夫林哈考特出版的教材，与美国小学是同质同步的课堂。 请问咱们小朋友怎么称呼呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "textbook"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_age"
+      ],
+      "nl": {
+        "agt": {
+          "0": "有两种的班型，一种是全天班，从早上的九点到晚上的五点，另外一种班型是利用孩子放学以后的时间和周末的时间过来学习的 恩，请问您是给几岁的孩子咨询瑞思的课程呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "fulltime_or_sparetime"
+      ]
+    },
+    {
+      "request_slots": [
+        "english_level"
+      ],
+      "nl": {
+        "agt": {
+          "0": "有两种的班型，一种是全天班，从早上的九点到晚上的五点，另外一种班型是利用孩子放学以后的时间和周末的时间过来学习的 孩子的英语基础怎么样呢？有上过辅导班吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "fulltime_or_sparetime"
+      ]
+    },
+    {
+      "request_slots": [
+        "special_need"
+      ],
+      "nl": {
+        "agt": {
+          "0": "有两种的班型，一种是全天班，从早上的九点到晚上的五点，另外一种班型是利用孩子放学以后的时间和周末的时间过来学习的 请问您想提高孩子的哪些能力呢"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "fulltime_or_sparetime"
+      ]
+    },
+    {
+      "request_slots": [
+        "know_about_ruisi"
+      ],
+      "nl": {
+        "agt": {
+          "0": "有两种的班型，一种是全天班，从早上的九点到晚上的五点，另外一种班型是利用孩子放学以后的时间和周末的时间过来学习的 请问您之前了解过瑞思吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "fulltime_or_sparetime"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_location"
+      ],
+      "nl": {
+        "agt": {
+          "0": "有两种的班型，一种是全天班，从早上的九点到晚上的五点，另外一种班型是利用孩子放学以后的时间和周末的时间过来学习的 请问您是在哪个城市呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "fulltime_or_sparetime"
+      ]
+    },
+    {
+      "request_slots": [
+        "phone_number"
+      ],
+      "nl": {
+        "agt": {
+          "0": "有两种的班型，一种是全天班，从早上的九点到晚上的五点，另外一种班型是利用孩子放学以后的时间和周末的时间过来学习的 请问您的联系方式是多少呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "fulltime_or_sparetime"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "有两种的班型，一种是全天班，从早上的九点到晚上的五点，另外一种班型是利用孩子放学以后的时间和周末的时间过来学习的 请问怎么称呼您呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "fulltime_or_sparetime"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_gender"
+      ],
+      "nl": {
+        "agt": {
+          "0": "有两种的班型，一种是全天班，从早上的九点到晚上的五点，另外一种班型是利用孩子放学以后的时间和周末的时间过来学习的 请问您是孩子的爸爸还是妈妈呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "fulltime_or_sparetime"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "有两种的班型，一种是全天班，从早上的九点到晚上的五点，另外一种班型是利用孩子放学以后的时间和周末的时间过来学习的 请问咱们小朋友怎么称呼呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "fulltime_or_sparetime"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_age"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们是小班授课形式的，一个班大概是10个孩子左右的 恩，请问您是给几岁的孩子咨询瑞思的课程呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_size"
+      ]
+    },
+    {
+      "request_slots": [
+        "english_level"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们是小班授课形式的，一个班大概是10个孩子左右的 孩子的英语基础怎么样呢？有上过辅导班吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_size"
+      ]
+    },
+    {
+      "request_slots": [
+        "special_need"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们是小班授课形式的，一个班大概是10个孩子左右的 请问您想提高孩子的哪些能力呢"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_size"
+      ]
+    },
+    {
+      "request_slots": [
+        "know_about_ruisi"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们是小班授课形式的，一个班大概是10个孩子左右的 请问您之前了解过瑞思吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_size"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_location"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们是小班授课形式的，一个班大概是10个孩子左右的 请问您是在哪个城市呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_size"
+      ]
+    },
+    {
+      "request_slots": [
+        "phone_number"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们是小班授课形式的，一个班大概是10个孩子左右的 请问您的联系方式是多少呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_size"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们是小班授课形式的，一个班大概是10个孩子左右的 请问怎么称呼您呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_size"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_gender"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们是小班授课形式的，一个班大概是10个孩子左右的 请问您是孩子的爸爸还是妈妈呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_size"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们是小班授课形式的，一个班大概是10个孩子左右的 请问咱们小朋友怎么称呼呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_size"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_age"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们这边一个阶段大概是一年的时间 恩，请问您是给几岁的孩子咨询瑞思的课程呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "length_of_per_period"
+      ]
+    },
+    {
+      "request_slots": [
+        "english_level"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们这边一个阶段大概是一年的时间 孩子的英语基础怎么样呢？有上过辅导班吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "length_of_per_period"
+      ]
+    },
+    {
+      "request_slots": [
+        "special_need"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们这边一个阶段大概是一年的时间 请问您想提高孩子的哪些能力呢"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "length_of_per_period"
+      ]
+    },
+    {
+      "request_slots": [
+        "know_about_ruisi"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们这边一个阶段大概是一年的时间 请问您之前了解过瑞思吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "length_of_per_period"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_location"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们这边一个阶段大概是一年的时间 请问您是在哪个城市呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "length_of_per_period"
+      ]
+    },
+    {
+      "request_slots": [
+        "phone_number"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们这边一个阶段大概是一年的时间 请问您的联系方式是多少呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "length_of_per_period"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们这边一个阶段大概是一年的时间 请问怎么称呼您呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "length_of_per_period"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_gender"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们这边一个阶段大概是一年的时间 请问您是孩子的爸爸还是妈妈呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "length_of_per_period"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们这边一个阶段大概是一年的时间 请问咱们小朋友怎么称呼呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "length_of_per_period"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_age"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们这边一个阶段中途是不允许退费的 恩，请问您是给几岁的孩子咨询瑞思的课程呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "allow_return_premium"
+      ]
+    },
+    {
+      "request_slots": [
+        "english_level"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们这边一个阶段中途是不允许退费的 孩子的英语基础怎么样呢？有上过辅导班吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "allow_return_premium"
+      ]
+    },
+    {
+      "request_slots": [
+        "special_need"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们这边一个阶段中途是不允许退费的 请问您想提高孩子的哪些能力呢"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "allow_return_premium"
+      ]
+    },
+    {
+      "request_slots": [
+        "know_about_ruisi"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们这边一个阶段中途是不允许退费的 请问您之前了解过瑞思吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "allow_return_premium"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_location"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们这边一个阶段中途是不允许退费的 请问您是在哪个城市呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "allow_return_premium"
+      ]
+    },
+    {
+      "request_slots": [
+        "phone_number"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们这边一个阶段中途是不允许退费的 请问您的联系方式是多少呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "allow_return_premium"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们这边一个阶段中途是不允许退费的 请问怎么称呼您呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "allow_return_premium"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_gender"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们这边一个阶段中途是不允许退费的 请问您是孩子的爸爸还是妈妈呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "allow_return_premium"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们这边一个阶段中途是不允许退费的 请问咱们小朋友怎么称呼呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "allow_return_premium"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_age"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们的老师中外教都有，主要以中教为主，在全英文的环境下进行学习 恩，请问您是给几岁的孩子咨询瑞思的课程呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "teacher_nation"
+      ]
+    },
+    {
+      "request_slots": [
+        "english_level"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们的老师中外教都有，主要以中教为主，在全英文的环境下进行学习 孩子的英语基础怎么样呢？有上过辅导班吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "teacher_nation"
+      ]
+    },
+    {
+      "request_slots": [
+        "special_need"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们的老师中外教都有，主要以中教为主，在全英文的环境下进行学习 请问您想提高孩子的哪些能力呢"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "teacher_nation"
+      ]
+    },
+    {
+      "request_slots": [
+        "know_about_ruisi"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们的老师中外教都有，主要以中教为主，在全英文的环境下进行学习 请问您之前了解过瑞思吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "teacher_nation"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_location"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们的老师中外教都有，主要以中教为主，在全英文的环境下进行学习 请问您是在哪个城市呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "teacher_nation"
+      ]
+    },
+    {
+      "request_slots": [
+        "phone_number"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们的老师中外教都有，主要以中教为主，在全英文的环境下进行学习 请问您的联系方式是多少呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "teacher_nation"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们的老师中外教都有，主要以中教为主，在全英文的环境下进行学习 请问怎么称呼您呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "teacher_nation"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_gender"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们的老师中外教都有，主要以中教为主，在全英文的环境下进行学习 请问您是孩子的爸爸还是妈妈呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "teacher_nation"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "我们的老师中外教都有，主要以中教为主，在全英文的环境下进行学习,请问咱们小朋友怎么称呼呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "teacher_nation"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_age"
+      ],
+      "nl": {
+        "agt": {
+          "0": "不同的阶段和班型对应的课时是不一样的，您留下联系方式，我安排校区的专业课程老师结合小朋友的情况为您详细的介绍一下，您看可以吗？ 恩，请问您是给几岁的孩子咨询瑞思的课程呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_type"
+      ]
+    },
+    {
+      "request_slots": [
+        "english_level"
+      ],
+      "nl": {
+        "agt": {
+          "0": "不同的阶段和班型对应的课时是不一样的，您留下联系方式，我安排校区的专业课程老师结合小朋友的情况为您详细的介绍一下，您看可以吗？ 孩子的英语基础怎么样呢？有上过辅导班吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_type"
+      ]
+    },
+    {
+      "request_slots": [
+        "special_need"
+      ],
+      "nl": {
+        "agt": {
+          "0": "不同的阶段和班型对应的课时是不一样的，您留下联系方式，我安排校区的专业课程老师结合小朋友的情况为您详细的介绍一下，您看可以吗？ 请问您想提高孩子的哪些能力呢"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_type"
+      ]
+    },
+    {
+      "request_slots": [
+        "know_about_ruisi"
+      ],
+      "nl": {
+        "agt": {
+          "0": "不同的阶段和班型对应的课时是不一样的，您留下联系方式，我安排校区的专业课程老师结合小朋友的情况为您详细的介绍一下，您看可以吗？ 请问您之前了解过瑞思吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_type"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_location"
+      ],
+      "nl": {
+        "agt": {
+          "0": "不同的阶段和班型对应的课时是不一样的，您留下联系方式，我安排校区的专业课程老师结合小朋友的情况为您详细的介绍一下，您看可以吗？ 请问您是在哪个城市呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_type"
+      ]
+    },
+    {
+      "request_slots": [
+        "phone_number"
+      ],
+      "nl": {
+        "agt": {
+          "0": "不同的阶段和班型对应的课时是不一样的，您留下联系方式，我安排校区的专业课程老师结合小朋友的情况为您详细的介绍一下，您看可以吗？ 请问您的联系方式是多少呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_type"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "不同的阶段和班型对应的课时是不一样的，您留下联系方式，我安排校区的专业课程老师结合小朋友的情况为您详细的介绍一下，您看可以吗？ 请问怎么称呼您呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_type"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_gender"
+      ],
+      "nl": {
+        "agt": {
+          "0": "不同的阶段和班型对应的课时是不一样的，您留下联系方式，我安排校区的专业课程老师结合小朋友的情况为您详细的介绍一下，您看可以吗？ 请问您是孩子的爸爸还是妈妈呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_type"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "不同的阶段和班型对应的课时是不一样的，您留下联系方式，我安排校区的专业课程老师结合小朋友的情况为您详细的介绍一下，您看可以吗？ 请问咱们小朋友怎么称呼呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "class_type"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_age"
+      ],
+      "nl": {
+        "agt": {
+          "0": "针对13-18岁咱们是线上的课程 恩，请问您是给几岁的孩子咨询瑞思的课程呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "online_course"
+      ]
+    },
+    {
+      "request_slots": [
+        "english_level"
+      ],
+      "nl": {
+        "agt": {
+          "0": "针对13-18岁咱们是线上的课程 孩子的英语基础怎么样呢？有上过辅导班吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "online_course"
+      ]
+    },
+    {
+      "request_slots": [
+        "special_need"
+      ],
+      "nl": {
+        "agt": {
+          "0": "针对13-18岁咱们是线上的课程 请问您想提高孩子的哪些能力呢"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "online_course"
+      ]
+    },
+    {
+      "request_slots": [
+        "know_about_ruisi"
+      ],
+      "nl": {
+        "agt": {
+          "0": "针对13-18岁咱们是线上的课程 请问您之前了解过瑞思吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "online_course"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_location"
+      ],
+      "nl": {
+        "agt": {
+          "0": "针对13-18岁咱们是线上的课程 请问您是在哪个城市呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "online_course"
+      ]
+    },
+    {
+      "request_slots": [
+        "phone_number"
+      ],
+      "nl": {
+        "agt": {
+          "0": "针对13-18岁咱们是线上的课程 请问您的联系方式是多少呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "online_course"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "针对13-18岁咱们是线上的课程 请问怎么称呼您呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "online_course"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_gender"
+      ],
+      "nl": {
+        "agt": {
+          "0": "针对13-18岁咱们是线上的课程,我们的网络课程是针对上初中有一定的口语基础能用英语进行简单交流的孩子的，请问咱们小朋友怎么称呼呢？请问您是孩子的爸爸还是妈妈呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "online_course"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "针对13-18岁咱们是线上的课程 请问咱们小朋友怎么称呼呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "online_course"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_age"
+      ],
+      "nl": {
+        "agt": {
+          "0": "不同的阶段和班型对应的课时是不一样的，我安排校区的专业课程老师结合小朋友的情况为您详细的介绍一下，您看可以吗？ 恩，请问您是给几岁的孩子咨询瑞思的课程呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "fee"
+      ]
+    },
+    {
+      "request_slots": [
+        "english_level"
+      ],
+      "nl": {
+        "agt": {
+          "0": "不同的阶段和班型对应的课时是不一样的，我安排校区的专业课程老师结合小朋友的情况为您详细的介绍一下，您看可以吗？ 孩子的英语基础怎么样呢？有上过辅导班吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "fee"
+      ]
+    },
+    {
+      "request_slots": [
+        "special_need"
+      ],
+      "nl": {
+        "agt": {
+          "0": "不同的阶段和班型对应的课时是不一样的，我安排校区的专业课程老师结合小朋友的情况为您详细的介绍一下，您看可以吗？ 请问您想提高孩子的哪些能力呢"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "fee"
+      ]
+    },
+    {
+      "request_slots": [
+        "know_about_ruisi"
+      ],
+      "nl": {
+        "agt": {
+          "0": "不同的阶段和班型对应的课时是不一样的，我安排校区的专业课程老师结合小朋友的情况为您详细的介绍一下，您看可以吗？ 请问您之前了解过瑞思吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "fee"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_location"
+      ],
+      "nl": {
+        "agt": {
+          "0": "不同的阶段和班型对应的课时是不一样的，我安排校区的专业课程老师结合小朋友的情况为您详细的介绍一下，您看可以吗？ 请问您是在哪个城市呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "fee"
+      ]
+    },
+    {
+      "request_slots": [
+        "phone_number"
+      ],
+      "nl": {
+        "agt": {
+          "0": "不同的阶段和班型对应的课时是不一样的，我安排校区的专业课程老师结合小朋友的情况为您详细的介绍一下，您看可以吗？ 请问您的联系方式是多少呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "fee"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "不同的阶段和班型对应的课时是不一样的，我安排校区的专业课程老师结合小朋友的情况为您详细的介绍一下，您看可以吗？ 请问怎么称呼您呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "fee"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_gender"
+      ],
+      "nl": {
+        "agt": {
+          "0": "不同的阶段和班型对应的课时是不一样的，我安排校区的专业课程老师结合小朋友的情况为您详细的介绍一下，您看可以吗？ 请问您是孩子的爸爸还是妈妈呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "fee"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "不同的阶段和班型对应的课时是不一样的，具体费用也要结合孩子的实际情况，请问咱们小朋友怎么称呼呢？我安排校区的专业课程老师结合小朋友的情况为您详细的介绍一下，您看可以吗？ "
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "fee"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_age"
+      ],
+      "nl": {
+        "agt": {
+          "0": "好的，那我先给您介绍一下瑞思英语：瑞思学科英语使用美国霍顿·米夫林·哈考特教育集团历时多年斥巨资打造的课程及教材，充分遵循孩子的认知规律，由浅入深。全面提升孩子英语语言、学科知识、英语思维、应用能力。 恩，请问您是给几岁的孩子咨询瑞思的课程呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "ruisi_introduction"
+      ]
+    },
+    {
+      "request_slots": [
+        "english_level"
+      ],
+      "nl": {
+        "agt": {
+          "0": "好的，那我先给您介绍一下瑞思英语：瑞思学科英语使用美国霍顿·米夫林·哈考特教育集团历时多年斥巨资打造的课程及教材，充分遵循孩子的认知规律，由浅入深。全面提升孩子英语语言、学科知识、英语思维、应用能力。 孩子的英语基础怎么样呢？有上过辅导班吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "ruisi_introduction"
+      ]
+    },
+    {
+      "request_slots": [
+        "special_need"
+      ],
+      "nl": {
+        "agt": {
+          "0": "好的，那我先给您介绍一下瑞思英语：瑞思学科英语使用美国霍顿·米夫林·哈考特教育集团历时多年斥巨资打造的课程及教材，充分遵循孩子的认知规律，由浅入深。全面提升孩子英语语言、学科知识、英语思维、应用能力。 请问您想提高孩子的哪些能力呢"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "ruisi_introduction"
+      ]
+    },
+    {
+      "request_slots": [
+        "know_about_ruisi"
+      ],
+      "nl": {
+        "agt": {
+          "0": "好的，那我先给您介绍一下瑞思英语：瑞思学科英语使用美国霍顿·米夫林·哈考特教育集团历时多年斥巨资打造的课程及教材，充分遵循孩子的认知规律，由浅入深。全面提升孩子英语语言、学科知识、英语思维、应用能力。 请问您之前了解过瑞思吗？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "ruisi_introduction"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_location"
+      ],
+      "nl": {
+        "agt": {
+          "0": "好的，那我先给您介绍一下瑞思英语：瑞思学科英语使用美国霍顿·米夫林·哈考特教育集团历时多年斥巨资打造的课程及教材，充分遵循孩子的认知规律，由浅入深。全面提升孩子英语语言、学科知识、英语思维、应用能力。 请问您是在哪个城市呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "ruisi_introduction"
+      ]
+    },
+    {
+      "request_slots": [
+        "phone_number"
+      ],
+      "nl": {
+        "agt": {
+          "0": "好的，那我先给您介绍一下瑞思英语：瑞思学科英语使用美国霍顿·米夫林·哈考特教育集团历时多年斥巨资打造的课程及教材，充分遵循孩子的认知规律，由浅入深。全面提升孩子英语语言、学科知识、英语思维、应用能力。 请问您的联系方式是多少呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "ruisi_introduction"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "好的，那我先给您介绍一下瑞思英语：瑞思学科英语使用美国霍顿·米夫林·哈考特教育集团历时多年斥巨资打造的课程及教材，充分遵循孩子的认知规律，由浅入深。全面提升孩子英语语言、学科知识、英语思维、应用能力。 请问怎么称呼您呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "ruisi_introduction"
+      ]
+    },
+    {
+      "request_slots": [
+        "client_gender"
+      ],
+      "nl": {
+        "agt": {
+          "0": "好的，那我先给您介绍一下瑞思英语：瑞思学科英语使用美国霍顿·米夫林·哈考特教育集团历时多年斥巨资打造的课程及教材，充分遵循孩子的认知规律，由浅入深。全面提升孩子英语语言、学科知识、英语思维、应用能力。 请问您是孩子的爸爸还是妈妈呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "ruisi_introduction"
+      ]
+    },
+    {
+      "request_slots": [
+        "child_name"
+      ],
+      "nl": {
+        "agt": {
+          "0": "好的，那我先给您介绍一下瑞思英语：瑞思学科英语使用美国霍顿·米夫林·哈考特教育集团历时多年斥巨资打造的课程及教材，充分遵循孩子的认知规律，由浅入深。全面提升孩子英语语言、学科知识、英语思维、应用能力。 请问咱们小朋友怎么称呼呢？"
+        },
+        "usr": ""
+      },
+      "inform_slots": [
+        "ruisi_introduction"
+      ]
+    }
+  ], 
+
+  "inform":[
+      {
+        "request_slots": [],
+        "nl": {"agt": {"0":"好的，您可以直接拨打4006101100进行咨询,感谢您对瑞思英语的关注，祝您生活愉快，再见！"}, "usr":""},
+        "inform_slots": ["user_goal"]
+      },
+      {
+        "request_slots": [],
+        "nl": {"agt": {"0":"不同的阶段和班型对应的课时是不一样的，我安排校区的专业课程老师结合小朋友的情况为您详细的介绍一下，您看可以吗？"}, "usr":""},
+        "inform_slots": ["fee"]
+      },
+	  {
+        "request_slots": [],
+        "nl": {"agt": {"0":"瑞思中外教老师都是有的，在全英文的环境下学习，除了培养兴趣以外，主要是锻炼孩子的整句输出能力，刚好瑞思有适合孩子的体验课，您可以带着孩子过来感受一下，您看可以吗？"}, "usr":""},
+        "inform_slots": ["teacher_nation"]
+      },
+      {
+        "request_slots": [],
+        "nl": {"agt": {"0":"针对13-18岁咱们是线上的课程"}, "usr":""},
+        "inform_slots": ["online_course"]
+      },
+      {
+        "request_slots": [],
+        "nl": {"agt": {"0":"您$reserve_time$有时间吗，我给您预约这个时间方便吗？"}, "usr":""},
+        "inform_slots": ["reserve_time"]
+      },
+      {
+        "request_slots": [],
+        "nl": {"agt": {"0":"咱们的课程主要是针对3-18岁的孩子的。"}, "usr":""},
+        "inform_slots": ["child_age"]
+      },
+      {
+        "request_slots": [],
+        "nl": {"agt": {"0": "我们的校区电话是$slot_val$"}, "usr": ""},
+        "inform_slots": ["school_phone"]
+      },
+      {
+        "request_slots": [],
+        "nl": {"agt": {"0":"是这样的，我们最近正在进行开学季主题活动，优惠力度很大，您可以先了解一下"}, "usr":""},
+        "inform_slots": ["sale"]
+      },
+      {
+        "request_slots": [],
+        "nl": {"agt": {"0":"不好意思，我们这边暂时不支持微信和QQ等除电话之外的联系方式，非常抱歉"}, "usr":""},
+        "inform_slots": ["other_contact"]
+      },
+      {
+        "request_slots": [],
+        "nl": {"agt": {"0":"好的，那我先给您介绍一下瑞思英语：瑞思学科英语使用美国霍顿·米夫林·哈考特教育集团历时多年斥巨资打造的课程及教材，充分遵循孩子的认知规律，由浅入深。全面提升孩子英语语言、学科知识、英语思维、应用能力。"}, "usr": ""},
+        "inform_slots": ["ruisi_introduction"]
+      },
+      {
+        "request_slots": [],
+        "nl": {"agt": {"0":"您好，瑞思采用的是霍顿米夫林哈考特出版的教材，与美国小学是同质同步的课堂。"}, "usr": ""},
+        "inform_slots": ["ruisi_introduction"]
+      },
+      {
+        "request_slots": [],
+        "nl": {"agt": {"0":"一课时是一个小时的，家长如果担心孩子适应情况的话 咱们有试听课 您可以带宝贝先参加试一试，观察宝宝的适应情况噢，"}, "usr": ""},
+        "inform_slots": ["class_length"]
+      },
+      {
+        "request_slots": [],
+        "nl": {"agt": {"0":"一个班的话大概10个孩子左右的，具体的上课形式可以后期安排老师为您介绍一下"}, "usr": ""},
+        "inform_slots": ["class_size"]
+      }
+  ],
+
+  "select":[
+      {
+        "request_slots": ["reserve_location"],
+        "nl": {"agt":{"0":"$slot_val$\n请问您想预定哪个校区呢？"}, "usr":""},
+        "inform_slots": ["reserve_location"]
+      }
+  ],
+
+  "greeting":[
+      {
+        "request_slots": [],
+        "nl": {"agt": {"0":"您好，请问有什么可以帮您的么？"}, "usr":""},
+        "inform_slots": []
+      }
+  ],
+
+  "bye":[
+      {
+        "request_slots": [],
+        "nl": {"agt": {"0":"感谢您对瑞思英语的关注，祝您生活愉快，再见。", "1":"现在是咨询高峰未能及时回复您的信息，请您谅解！您可致电400-610-1100进行咨询或留下您的联系方式，稍后将由客服人员回电给您，感谢您对瑞思学科英语关注！"}, "usr":""},
+        "inform_slots": []
+      }
+  ],
+
+  "thanks":[
+      {
+        "request_slots": [],
+        "nl": {"agt": {"0":"感谢您对瑞思学科英语的关注"}, "usr":""},
+        "inform_slots": []
+      }
+  ]
+}

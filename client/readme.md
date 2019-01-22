@@ -1,3 +1,3 @@
 ## Run in Ubuntu
-1. ±£Ö¤·şÎñ¶ËÔÚ`localhost:5000`ÏÂÔËĞĞ
-2. ÔËĞĞ`python3 test_with_command.py`
+1. ä¿è¯æœåŠ¡ç«¯åœ¨`localhost:5000`ä¸‹è¿è¡Œ
+2. è¿è¡Œ`python3 test_with_command.py`

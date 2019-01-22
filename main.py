@@ -7,7 +7,7 @@ from falcon_cors import CORS
 
 from constant import ConstantCenter
 from middlewares.audit_middleware import AuditMiddleware
-from responders.probe_responder import ProbeResponder
+from responders.root_responder import RootResponder
 
 
 # 允许所有的跨域请求
@@ -15,7 +15,7 @@ cors = CORS(allow_all_origins=True, allow_all_headers=True, allow_all_methods=Tr
 
 api = falcon.API(media_type='application/json', middleware=[AuditMiddleware(), cors.middleware])
 
-api.add_route('/probe', ProbeResponder())
+api.add_route('/', RootResponder())
 
 
 ConstantCenter.info_logger.info('服务器初始化成功', extra={"host": ConstantCenter.host_addr})

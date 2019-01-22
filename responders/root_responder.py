@@ -7,7 +7,7 @@ from database.dao.session_dao import SessionDAO
 from chatbot.DialogManager.DialogManager import DM
 
 
-class ProbeResponder(object):
+class RootResponder(object):
 
     def on_get(self, req, res):
         # TODO: CHECK FOR PARAMS `user_id`

@@ -11,7 +11,7 @@ class Client:
             host host name of the server
             port port of the server
         '''
-        self.url = "http://" + host + ":" + str(port) + "/probe"
+        self.url = "http://" + host + ":" + str(port) + "/"
         if session_id is not None:
             self.session_id = session_id
         else:

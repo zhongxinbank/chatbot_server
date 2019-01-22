@@ -1,3 +1,14 @@
-## Run in Ubuntu
-1. 保证服务端在`localhost:5000`下运行
-2. 运行`python3 test_with_command.py`
+目录说明
+--------
+此目录用于放置与chatbot_server服务端相对应的客户端的代码。本目录与chatbot_server中文件**无相互依赖关系**，因此可以将其移动至任意目录运行。
+
+文件说明
+--------
+* `client.py` ------ 实现了一个`Client`类，用于封装一次单独的会话过程。
+* `test_with_command.py` ------ 基于Client实现的一个命令行客服对话系统，交互方式与[此前项目](https://github.com/zhongxinbank/ruisi_20190118)中的`main.py`相同，只不过由本地系统变成了通过API请求回复。
+* `test_for_performance.py` ------ 对服务端的性能测试。测试方法：开启1000个（参数可调）线程，每个线程分别进行**一轮单独的会话过程**，测试样例为代码中指定，各个线程均相同；在单个线程的单轮对话中每两个请求发出的延迟为0.1秒（参数可调）。
+
+运行命令行测试流程
+------------------
+1. 将其中的`host`和`port`分别改为服务端运行的地址和端口；
+2. 运行`python3 test_for_command.py`。

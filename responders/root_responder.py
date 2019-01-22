@@ -1,5 +1,5 @@
 import falcon
-import json, uuid
+import json, uuid, os, codecs
 from constant import *
 from constant import RequestException, AppException, DatabaseException
 from database.dao.session_dao import SessionDAO
@@ -64,7 +64,9 @@ class RootResponder(object):
                     SessionDAO.kill_user_session(session_id)
                 else:
                     SessionDAO.set_user_session(session_id, session, 600)
-                with open(ConstantCenter.app_env['app']['SAVE_PATH'] + session_id, 'w') as f_out:
+                if not os.path.exists(ConstantCenter.app_env['app']['SAVE_PATH']):
+                    os.makedirs(ConstantCenter.app_env['app']['SAVE_PATH'])
+                with codecs.open(ConstantCenter.app_env['app']['SAVE_PATH'] + session_id + '.txt', 'w', encoding='utf-8') as f_out:
                     f_out.write(session.get_current_info())
                 res.status = falcon.HTTP_200
                 res.body = json.dumps({ 

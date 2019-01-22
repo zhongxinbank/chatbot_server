@@ -21,6 +21,7 @@ class Client:
                 self.session_id = resp["session_id"]
             else:
                 raise RequestException(resp["status"]["code"], resp["status"]["message"])
+        self.ended = False
 
     def response(self, user_input):
         '''
@@ -31,6 +32,7 @@ class Client:
         resp = requests.post(self.url, data = json.dumps({"session_id": self.session_id, "user_input": user_input}))
         resp = resp.json()
         if resp["status"]["code"] == 200:
+            self.ended = True if resp["ended"] == 1 else False
             return resp["output"]
         else:
             raise RequestException(resp["status"]["code"], resp["status"]["message"])

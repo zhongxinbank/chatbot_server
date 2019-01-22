@@ -71,6 +71,7 @@ class RootResponder(object):
                 res.status = falcon.HTTP_200
                 res.body = json.dumps({ 
                     'output': output_message,
+                    'ended': int(session.flag),
                     'status': {
                         'code': 200,
                         'message': "Successfully produced the response"

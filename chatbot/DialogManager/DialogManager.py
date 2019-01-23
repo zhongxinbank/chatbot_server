@@ -123,7 +123,7 @@ class DM:
                         elif "special_need" in usr_diaact["inform_slots"]:
                             if 'child_age' in self.agent_inform_slots:  # 判断年龄
                                 try:
-                                    age = int(re.findall("\d", self.agent_inform_slots['child_age'])[0])
+                                    age = int(re.findall("[\d]+岁", self.agent_inform_slots["child_age"])[0][:-1])
                                     if 3 <= age <= 5:
                                         self.index = 0
                                     elif 6 <= age <= 12:

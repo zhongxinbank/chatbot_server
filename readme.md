@@ -23,7 +23,7 @@ gunicorn -b 0.0.0.0:5000 main:api
 
 ##### 成功调用示例
 ```
-GET http://localhost:5000/?user_id=123456
+GET http://10.112.145.151:80/?user_id=123456
 ```
 返回结果:
 ```
@@ -38,7 +38,7 @@ GET http://localhost:5000/?user_id=123456
 
 ##### 错误调用示例
 ```
-GET http://localhost:5000/
+GET http://10.112.145.151:80/
 ```
 返回结果:
 ```
@@ -63,7 +63,7 @@ GET http://localhost:5000/
 
 ##### 成功调用示例
 ```
-POST http://localhost:5000/
+POST http://10.112.145.151:80/
 ```
 request.body:
 ```
@@ -144,4 +144,4 @@ request.body:
 * 该`session_id`对应的会话已经关闭（即：此轮对话已经结束，在此前发生的最后一次成功调用中`ended`应该标记为`1`）
 
 docker部署（hold）
-------------------
+-----------------

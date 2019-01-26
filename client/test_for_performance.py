@@ -14,7 +14,7 @@ class RunClientThread(threading.Thread):
 
     def run(self):
         start_time = time.time()
-        cli = Client(user_id=self.thread_id, host='localhost', port=5000, session_id=None)
+        cli = Client(user_id=self.thread_id, host='39.105.100.46', port=80, session_id=None)
         end_time = time.time()
         new_sess_time_ms = 1000.0 * (end_time - start_time)
         

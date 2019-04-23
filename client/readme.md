@@ -11,4 +11,5 @@
 运行命令行测试流程
 ------------------
 1. 将其中的`host`和`port`分别改为服务端运行的地址和端口；
-2. 运行`python3 test_for_command.py`。
+2. 运行`python3 test_with_command.py`。
+

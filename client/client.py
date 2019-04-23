@@ -31,6 +31,8 @@ class Client:
         '''
         resp = requests.post(self.url, data = json.dumps({"session_id": self.session_id, "user_input": user_input}))
         resp = resp.json()
+        print("* [DEBUG] [USER_ACTION] " + resp["action_info"]["user_action"])
+        print("* [DEBUG] [RESP_ACTION] " + resp["action_info"]["response_action"])
         if resp["status"]["code"] == 200:
             self.ended = True if resp["ended"] == 1 else False
             return resp["output"]

@@ -8,12 +8,16 @@ from datetime import datetime
 import logging.config
 import configparser
 
+from chatbot.NLU.nlu_rule import NLU
+from chatbot.NLG.nlg import NLG
 
 class ConstantCenter():
 
     logger_config = json.load(open('./config/logger.json'), encoding='utf-8')
     app_env = configparser.ConfigParser()
     app_env.read('./config/app.env')
+    nlu = NLU()
+    nlg = NLG()
     if not os.path.exists(app_env['app']['SAVE_PATH']):
         os.makedirs(app_env['app']['SAVE_PATH'])
     if not os.path.exists('./log'):

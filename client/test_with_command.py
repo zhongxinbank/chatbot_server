@@ -1,8 +1,8 @@
 from client import Client
 
 user_id = 0
-host = "39.105.100.46"
-port = 80
+host = "localhost"
+port = 5000
 
 cli = Client(user_id=user_id, host=host, port=port, session_id=None)
 print("Successfully created a session with ID: " + cli.session_id)

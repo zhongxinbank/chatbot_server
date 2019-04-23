@@ -1,0 +1,24 @@
+{
+    "all_request_slots":[
+        "child_age",
+        "know_about_ruisi",
+        "english_level",
+        "special_need",
+        "client_location",
+        "client_name",
+        "client_gender",
+        "child_name",
+        "phone_number"
+    ],
+    "slots_check":{
+        "child_age": true,
+        "english_level": false,
+         "special_need": false,
+        "know_about_ruisi": false,
+         "client_location": false,
+         "client_name": false,
+         "client_gender": false,
+         "phone_number": true,
+         "child_name": false
+    }
+}

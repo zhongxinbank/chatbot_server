@@ -5,7 +5,7 @@
         "use_color": false,
         "formatters": {
             "standard": {
-                "format": "[%(asctime)s] [%(host)s] [Kivis Server] [%(levelname)s] [%(thread)s] [%(module)s] - %(message)s"
+                "format": "[%(asctime)s] [%(host)s] [%(levelname)s] [%(thread)s] [%(module)s] - %(message)s"
             }
         },
         "handlers": {
@@ -15,41 +15,52 @@
                 "stream": "ext://sys.stdout"
             },
             "info_file_handler": {
-                "class": "logging.handlers.RotatingFileHandler",
+                "class": "logging.handlers.TimedRotatingFileHandler",
                 "formatter": "standard",
                 "filename": "./log/info.log",
-                "maxBytes": 10485760,
-                "backupCount": 20,
+                "when": "MIDNIGHT",
+                "backupCount": 0,
                 "encoding": "utf8"
             },
             "error_file_handler": {
-                "class": "logging.handlers.RotatingFileHandler",
+                "class": "logging.handlers.TimedRotatingFileHandler",
                 "formatter": "standard",
                 "filename": "./log/error.log",
-                "maxBytes": 10485760,
-                "backupCount": 20,
+                "when": "MIDNIGHT",
+                "backupCount": 0,
                 "encoding": "utf8"
             }
         },
         "loggers": {
             "error": {
                 "level": "ERROR",
-                "handlers": ["error_file_handler", "console"],
+                "handlers": [
+                    "error_file_handler",
+                    "console"
+                ],
                 "propagate": true
             },
-            "info":{
+            "info": {
                 "level": "INFO",
-                "handlers": ["info_file_handler", "console"],
+                "handlers": [
+                    "info_file_handler",
+                    "console"
+                ],
                 "propagate": true
             },
-            "debug":{
+            "debug": {
                 "level": "DEBUG",
-                "handlers": ["console"],
+                "handlers": [
+                    "console"
+                ],
                 "propagate": false
             },
-            "warning":{
+            "warning": {
                 "level": "WARNING",
-                "handlers": ["info_file_handler", "console"],
+                "handlers": [
+                    "info_file_handler",
+                    "console"
+                ],
                 "propagate": true
             }
         }

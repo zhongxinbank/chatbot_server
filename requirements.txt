@@ -4,3 +4,5 @@ falcon-cors
 redis
 jieba
 configparser
+pickle
+torch

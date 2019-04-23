@@ -1,0 +1,15 @@
+{
+    "class_schedule": ["课程安排"],
+    "audition_free": ["试听课免费", "试听.*免费", "试听.*收费", "试听.*费"],
+    "fee": ["费用"],
+    "class_type": ["课程.*内容", "内容", "课程.*设置"],
+    "audition_introduction": ["试听课介绍"],
+    "teacher_nation": ["国籍"],
+    "class_length": ["长度", "课.*多(长|久)"],
+    "ruisi_introduction": ["瑞思.*(简介|介绍)", "(了解|介绍).*瑞思"],
+    "class_size": ["班级大小", "班.*多少", "人数", "多少人"],
+    "textbook": ["课本", "教材"],
+    "sale": ["优惠", "折扣"],
+    "length_of_per_period": ["学期.*多长"],
+    "other_contact": ["其他联系方式", "留(微信|邮箱|QQ|qq)"]
+}

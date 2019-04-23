@@ -1,47 +1,113 @@
 {
-  "client_name": ["名字", "姓名", "叫什么", "贵姓", "姓什么", "称呼", "姓"],
-  "client_gender": ["女士", "小姐", "先生"],
-  "child_name": ["名字", "姓名", "叫什么", "贵姓", "姓什么", "称呼", "姓"],
-  "child_age": ["多大", "几岁", "多少岁", "几岁"],
-  "child_grade": ["几年级"],
-  "client_location": ["地址", "住址", "住在哪里", "哪个城市", "住在哪", "什么位置"],
-  "reserve_location": [],
-  "school_location": [],
-  "school_name": [],
-  "reserve_time": ["时间", "上午", "下午"],
-  "phone_number": ["联系方式", "手机号码", "手机号", "电话"],
-  "school_phone": ["学校的电话"],
-  "other_contact": ["微信", "QQ"],
-  "sale": ["优惠", "折扣"],
-  "english_level": ["英语水平", "英语怎么样", "接触", "学习怎么样"],
-  "special_need": ["能力", "方面"],
-  "attend_class_before": ["参加过辅导班", "上过辅导班", "去过辅导班"],
-  "know_about_ruisi": ["了解"],
-  "cut_in": ["插班"],
-  "user_goal": ["商务合作", "加盟", "预约", "咨询", "退费"],
-  "class_schedule": ["课程"],
-  "have_school_somewhere": ["有校区"],
-  "attend_class_alone": ["独立上课", "一个人上课"],
-  "allow_audition": ["试听"],
-  "audition_free": ["免费"],
-  "child_attend": [],
-  "allow_parents_together": ["陪同"],
-  "person_accompany": [],
-  "class_length": [],
-  "audition_introduction": [],
-  "textbook": ["教材", "课本"],
-  "fulltime_or_sparetime": [],
-  "class_size": ["多少人"],
-  "length_of_per_period": [],
-  "allow_return_premium": [],
-  "lesson_accompany": [],
-  "school_type": [],
-  "ruisi_introduction": [],
-  "teacher_nation": ["外教", "中教", "教师"],
-  "class_type": ["安排", "介绍", "情况"],
-  "online_course": ["在线课程", "网课"],
-  "online_course_location": [],
-  "online_or_offline": [],
-  "fee": ["费用", "多少钱", "收费", "价格", "学费"],
-  "unified_response": []
+    "client_name": [
+        "名字",
+        "姓名",
+        "叫什么",
+        "贵姓",
+        "姓什么",
+        "称呼",
+        "姓"
+    ],
+    "client_gender": [
+        "女士",
+        "小姐",
+        "先生",
+        "爸爸",
+        "妈妈",
+        "父亲",
+        "母亲",
+        "爸",
+        "妈"
+    ],
+    "child_name": [
+        "名字",
+        "姓名",
+        "叫什么",
+        "贵姓",
+        "姓什么",
+        "称呼",
+        "姓"
+    ],
+    "child_age": [
+    ],
+    "client_location": [
+        "地址",
+        "住址",
+        "住在哪里",
+        "哪个城市",
+        "住在哪",
+        "什么位置"
+    ],
+    "phone_number": [
+    ],
+    "other_contact": [
+        "微信",
+        "QQ"
+    ],
+
+    "english_level": [
+        "英语水平",
+        "英语怎么样",
+        "接触",
+        "学习怎么样"
+    ],
+    "special_need": [
+        "能力",
+        "方面"
+    ],
+    "attend_class_before": [
+        "参加过辅导班",
+        "上过辅导班",
+        "去过辅导班"
+    ],
+    "know_about_ruisi": [
+        "了解"
+    ],
+    "cut_in": [
+        "插班"
+    ],
+    "user_goal": [
+        "商务合作",
+        "加盟",
+        "预约",
+        "咨询",
+        "退费"
+    ],
+    "class_schedule": [
+        "课程"
+    ],
+    "class_size": [
+        "多少人"
+    ],
+    "teacher_nation": [
+        "外教",
+        "中教",
+        "教师"
+    ],
+    "class_type": [
+        "安排",
+        "介绍",
+        "情况"
+    ],
+    "fee": [
+        "费用",
+        "多少钱",
+        "收费",
+        "价格",
+        "学费"
+    ],
+
+    "textbook": [
+        "教材",
+        "课本"
+    ],
+    "sale": [
+        "优惠",
+        "折扣",
+        "活动"
+    ],
+    "audition_free": [
+        "试听.*免费", "试听.*收费"
+    ],
+    "unified_response": []
 }
